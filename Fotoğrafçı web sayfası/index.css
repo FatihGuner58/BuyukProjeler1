@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+    
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #6a6a6a;
+    background-image: url(resim3.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+header {
+    background-color: #ac7b7b;
+
+    color: #fff;
+    padding: 25px 0;
+}
+
+nav ul {
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block; /* Öğeleri yan yana sırala */
+    
+    
+}
+nav ul li a{
+    border: 3px solid transparent;
+    font-size: 18px;
+    margin-right: 45px;
+    border-radius: 10px;
+}
+nav ul li a:hover {
+    border-color: #ffffff !important;
+    color: #000000; /* veya istediğiniz başka bir renk */
+    background-color: white;
+}
+
+nav ul li:last-child {
+    margin-right: 50px; 
+}
+
+nav ul li:first-child {
+    margin-left: 50px; 
+}
+
+#fotoNecmi {
+    color: white;
+    font-size:80px;
+    float: left;
+    border: 1px solid transparent;
+    font-size: 45px;
+    margin-right: 45px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-left: 40px;
+    font-family: "Audiowide", sans-serif;
+}
+
+#fotoNecmi:hover{
+    color: #000000; /* veya istediğiniz başka bir renk */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block; /* Bağlantıları blok yaparak tam genişlik almasını sağla */
+    padding: 10px; /* Bağlantıların boşluğunu ayarla */
+}
+
+section {
+    padding: 10px ;
+    text-align: right;
+    margin-right: 25px;
+    margin-top: 200px;
+    
+}
+
+.photo img {
+    width: 500px; /* Resimlerin genişliğini ayarla */
+    height: 350px;
+    text-align: right;
+    border-radius: 20px;
+}
+article{
+    padding: 20px;
+}
+.gallery {
+    position: relative;
+}
+.photo {
+    display: none;
+    margin-top: 25px;
+}
+.photo.active {
+    display: block;
+}
+#reklamSözü{
+    margin-top: -200px;
+    font-family: "Sofia", sans-serif;
+    font-size: 20px;
+    margin-right: 40px;
+    color: white;
+}
+#randevu{
+    
+    margin-right: 210px;
+    
+}
+#randevuAl{
+    border-radius: 20px;
+    height: 45px;
+    width: 200px;
+    background-color: cornflowerblue;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+#randevuAl:hover{
+    background-color: brown;
+    color: white;
+}
+footer {
+    background-color: #ac7b7b;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 190px;
+}
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+    nav {
+        text-align: center;
+    }
+    nav ul {
+        display: none;
+        margin-top: 10px;
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+        
+    }
+    nav ul li#baslik4{
+        text-align: center;
+    }
+    #fotoNecmi {
+        float: none;
+        margin: 0 auto;
+    }
+    #randevu {
+        text-align: center;
+        margin: 20px auto;
+    }
+    #randevuAl {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+    #reklamSözü {
+        margin-top: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+    #portfolio .container {
+        padding: 10px;
+    }
+    #portfolio .gallery {
+        margin-top: 20px;
+    }
+    footer {
+        margin-top: 20px;
+    }
+}.menu-toggle {
+    display: none;
+    font-size: 29px;
+    cursor: pointer;
+}
+.menu-toggle:hover{
+    font-size: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 999;
+    }
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #ac7b7b;
+        padding: 10px;
+        border-radius: 10px;
+        
+        
+    }
+    nav ul.open {
+        display: block;
+    }
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+        
+        
+    }
+    #buton1,#buton2,#buton3,#buton4{
+        text-align: right;
+    }
+}

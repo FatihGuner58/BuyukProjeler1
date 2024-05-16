@@ -1,0 +1,93 @@
+@media (max-width: 768px) {
+    #hamburger-menu {
+        display: flex;
+    }
+    #basliklar {
+        display: none;
+    }
+    #basliklar.active {
+        display: block;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #333;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .list {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .list li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    #container ul {
+        margin-right: 40px;
+    }
+    #marka {
+        margin-left: 40px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    #container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #container ul {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    #resimler {
+        height: 600px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #container ul {
+        margin: 0;
+    }
+    #marka {
+        margin-left: 20px;
+    }
+    #yazi {
+        font-size: 35px;
+    }
+    #learn {
+        padding: 10px 15px;
+    }
+    #resimler {
+        height: 500px;
+    }
+    
+}
+@media (max-width: 576px) {
+    #container {
+        margin-top: 0;
+        padding: 0 10px;
+    }
+    #marka {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    #yazi {
+        font-size: 30px;
+    }
+    #yazilar {
+        margin-top: 100px;
+    }
+    #learn {
+        padding: 8px 12px;
+    }
+    #resimler {
+        height: 400px;
+    }
+}

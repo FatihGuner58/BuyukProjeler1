@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto Necmi</title>
+    <link rel="stylesheet" href="iletisim.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a id="fotoNecmi" href="index.html">Foto Necmi</a>
+                <ul>
+
+                    <li id="baslık1"><a href="anasayfa.html">Anasayfa</a></li>
+                    <li id="baslik2"><a href="hakkinda.html">Hakkında</a></li>
+                    <li id="baslik3"><a href="ornekler.html">Çekimler</a></li>
+                    <li id="baslik4"><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    </header>
+    <article>
+        <h1 id="hakkisndaBaslik">İletişim</h1>
+        <h2 id="adres">Adres</h2>
+        <p>Sularbaşı mahallesi kepenek caddesi no:10/D, Sivas, Turkey</p><br>
+        <h2 id=tel>Tel No</h2>
+        <p>0553 329 21 46</p>
+        <h2 id="email">E-mail</h2>
+        <p>nicepicture@windowslive.com</p>
+
+    </article>
+   
+    
+
+    <footer>
+        <div class="container">
+            <p>Tüm hakları saklıdır &copy; 2024</p>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+        var menu = document.querySelector('nav ul');
+        menu.classList.toggle('open');
+}
+    </script>
+    </body>
+</html>

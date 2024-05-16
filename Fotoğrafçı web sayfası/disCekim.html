@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto Necmi</title>
+    <link rel="stylesheet" href="disCekim.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a id="fotoNecmi" href="index.html">Foto Necmi</a>
+                <ul>
+                    <li id="baslık1"><a href="anasayfa.html">Anasayfa</a></li>
+                    <li id="baslik2"><a href="hakkinda.html">Hakkında</a></li>
+                    <li id="baslik3"><a href="ornekler.html">Çekimler</a></li>
+                    <li id="baslik4"><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        
+    </header>
+    
+    <article>
+        <a href="dügünCekim.html"><button id="buton1">Düğün Çekimleri</button></a>
+        <a href="disCekim.html"><button id="buton2">Dış Çekimler</button></a>
+        <a href="mezuniyet.html"><button id="buton3">Mezuniyet</button></a>
+        <a href="mimari.html"><button id="buton4">Mimari Çekimler</button></a>
+        <br>
+        
+    </article>
+    <aside>
+        <div class="resimler">
+    <img src="resim9.jpg" alt="Örnek Fotoğraf 1">
+    <img src="resim8.jpg" alt="Örnek Fotoğraf 2">
+    <img src="resim7.jpg" alt="Örnek Fotoğraf 3">
+    <img src="resim5.jpg" alt="Örnek Fotoğraf 4">
+    <img src="resim3.jpg" alt="Örnek Fotoğraf 5">
+    <img src="resim1.jpg" alt="Örnek Fotoğraf 6">
+    </div>
+    <!-- İhtiyaç duyulan diğer resimler buraya eklenebilir -->
+    </aside>
+    <footer>
+        <div class="container">
+            <p>Tüm hakları saklıdır &copy; 2024</p>
+        </div>
+    </footer>
+    <script>
+        
+        function toggleMenu() {
+        var menu = document.querySelector('nav ul');
+        menu.classList.toggle('open');
+}
+
+    </script>
+</body>
+</html>

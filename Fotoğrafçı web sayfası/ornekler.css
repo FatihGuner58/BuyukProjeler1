@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+    
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #6a6a6a;
+    background-image: url(resim9.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center; /* Arka plan resmini merkezde sabit tut */
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+header {
+    background-color:  #ac7b7b;
+
+    color: #fff;
+    padding: 25px 0;
+}
+#fotoNecmi {
+    color: white;
+    font-size:80px;
+    float: left;
+    border: 1px solid transparent;
+    font-size: 45px;
+    margin-right: 45px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-left: 40px;
+    font-family: "Audiowide", sans-serif;
+}
+
+#fotoNecmi:hover{
+    color: #000000; /* veya istediğiniz başka bir renk */
+}
+nav ul {
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block; /* Öğeleri yan yana sırala */
+    
+    
+}
+nav ul li a{
+    border: 3px solid transparent;
+    font-size: 18px;
+    margin-right: 45px;
+    border-radius: 10px;
+}
+nav ul li a:hover {
+    border-color: #ffffff !important;
+    color: #000000; /* veya istediğiniz başka bir renk */
+    background-color: white;
+}
+nav ul li:last-child {
+    margin-right: 50px; 
+}
+
+nav ul li:first-child {
+    margin-left: 50px; 
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block; /* Bağlantıları blok yaparak tam genişlik almasını sağla */
+    padding: 10px; /* Bağlantıların boşluğunu ayarla */
+}
+h1{
+    color: #fff;
+    font-family: "Arial, sans-serif";
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    border: 5px solid ;
+    border-width: 5px;
+    border-color: #333;
+    background-color: #333;
+}
+p{
+    color: #fff;
+    font-family: "Audiowide", sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+h2{
+    color: #fff;
+    font-family: "Audiowide", sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+article{
+    text-align: center;
+    padding: 3px;
+
+}
+#buton1,#buton2,#buton3,#buton4{
+    padding: 25px;
+    border-radius: 20px;
+    margin-left: 15px;
+    background-color: #ac7b7b;
+    margin-top: 250px;
+    width: 250px;
+    height: 90px;
+    font-size: 25px;
+    color: white;
+}
+#buton1:hover{
+    background-color: #a45656;;
+}
+#buton2:hover{
+    background-color: #a45656;;
+}
+#buton3:hover{
+    background-color: #a45656;;
+}
+#buton4:hover{
+    background-color: #a45656;;
+}
+footer {
+    background-color: #ac7b7b;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 260px;
+}
+.menu-toggle {
+    display: none;
+    font-size: 29px;
+    cursor: pointer;
+}
+.menu-toggle:hover{
+    font-size: 32px;
+}
+@media only screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 999;
+    }
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #ac7b7b;
+        padding: 10px;
+        border-radius: 10px;
+        
+        
+    }
+    nav ul.open {
+        display: block;
+    }
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+        
+    }
+    #baslık4 { /* İletişim öğesini özel olarak hizalamak için */
+        text-align: center;
+        
+    }
+}
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+    nav {
+        text-align: center;
+    }
+    nav ul {
+        display: none;
+        margin-top: 10px;
+    }
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    #fotoNecmi {
+        float: none;
+        margin: 0 auto;
+    }
+    #randevu {
+        text-align: center;
+        margin: 20px auto;
+    }
+    #randevuAl {
+        width: 100%;
+    }
+    
+}
